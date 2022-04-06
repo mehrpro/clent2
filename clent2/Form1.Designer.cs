@@ -51,6 +51,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_WireClient = new System.Windows.Forms.TextBox();
             this.btnClient4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.checkBoxQC = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -68,16 +70,18 @@
             // 
             // rtxt
             // 
+            this.rtxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxt.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxt.Location = new System.Drawing.Point(8, 35);
             this.rtxt.Name = "rtxt";
-            this.rtxt.Size = new System.Drawing.Size(1028, 180);
+            this.rtxt.Size = new System.Drawing.Size(971, 180);
             this.rtxt.TabIndex = 1;
             this.rtxt.Text = "";
             // 
             // txt
             // 
-            this.txt.Location = new System.Drawing.Point(169, 8);
+            this.txt.Location = new System.Drawing.Point(339, 7);
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(100, 20);
             this.txt.TabIndex = 0;
@@ -96,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 11);
+            this.label1.Location = new System.Drawing.Point(276, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 3;
@@ -104,17 +108,19 @@
             // 
             // wtxt
             // 
+            this.wtxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.wtxt.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wtxt.Location = new System.Drawing.Point(8, 250);
             this.wtxt.Name = "wtxt";
-            this.wtxt.Size = new System.Drawing.Size(1028, 229);
+            this.wtxt.Size = new System.Drawing.Size(973, 229);
             this.wtxt.TabIndex = 4;
             this.wtxt.Text = "";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(289, 11);
+            this.label2.Location = new System.Drawing.Point(444, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 5;
@@ -122,7 +128,7 @@
             // 
             // txtWireClient
             // 
-            this.txtWireClient.Location = new System.Drawing.Point(350, 9);
+            this.txtWireClient.Location = new System.Drawing.Point(505, 7);
             this.txtWireClient.Name = "txtWireClient";
             this.txtWireClient.Size = new System.Drawing.Size(27, 20);
             this.txtWireClient.TabIndex = 6;
@@ -160,6 +166,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -171,6 +180,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Beige;
+            this.tabPage1.Controls.Add(this.checkBoxQC);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.btn1);
             this.tabPage1.Controls.Add(this.txt);
             this.tabPage1.Controls.Add(this.wtxt);
@@ -202,7 +213,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(936, 485);
+            this.tabPage2.Size = new System.Drawing.Size(985, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "4step";
             // 
@@ -288,12 +299,31 @@
             this.btnClient4.UseVisualStyleBackColor = true;
             this.btnClient4.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(89, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "Client_QC";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // checkBoxQC
+            // 
+            this.checkBoxQC.AutoSize = true;
+            this.checkBoxQC.Location = new System.Drawing.Point(229, 9);
+            this.checkBoxQC.Name = "checkBoxQC";
+            this.checkBoxQC.Size = new System.Drawing.Size(41, 17);
+            this.checkBoxQC.TabIndex = 9;
+            this.checkBoxQC.Text = "QC";
+            this.checkBoxQC.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(996, 548);
-            this.ControlBox = false;
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
@@ -337,6 +367,8 @@
         private System.Windows.Forms.Button btn_ifEvent_copy;
         private System.Windows.Forms.Button btn_webServer_copy;
         private System.Windows.Forms.RichTextBox rth_WebCommand;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.CheckBox checkBoxQC;
     }
 }
 
